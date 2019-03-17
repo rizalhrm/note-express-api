@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const routers = require('./routers');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://root:abc123@ds113495.mlab.com:13495/mongoosecobafsd');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds.mlab.com:00000/mongooDBcloud');
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
